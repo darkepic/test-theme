@@ -1,0 +1,3 @@
+:root { --tt-window: "community"; }
+
+#global_header { background: var(--surface-strong, #0b1117) !important; }

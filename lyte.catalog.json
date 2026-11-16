@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "type": "theme",
+  "name": "Test Theme",
+  "description": "A small reference theme that styles every window type and uses colors, a slider, a select, toggles and a bundled image.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "preview": "assets/preview.png",
+  "tags": ["dark", "reference"]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 2,
+  "styles": [
+    { "window": "all", "file": "css/all.css" },
+    { "window": "main", "file": "css/main.css" },
+    { "window": "settings", "file": "css/settings.css" },
+    { "window": "friends", "file": "css/friends.css" },
+    { "window": "overlay", "file": "css/overlay.css" },
+    { "window": "menus", "file": "css/menus.css" },
+    { "window": "notifications", "file": "css/notifications.css" },
+    { "window": "dialogs", "file": "css/dialogs.css" },
+    { "window": "store", "file": "css/store.css" },
+    { "window": "community", "file": "css/community.css" },
+    { "window": "web", "file": "css/web.css" }
+  ],
+  "options": [
+    { "id": "accent", "type": "color", "label": "Accent color", "description": "Highlights, selection and focus.", "group": "Colors", "default": "#4fd1c5" },
+    { "id": "surface", "type": "color", "label": "Surface color", "description": "Library and settings background.", "group": "Colors", "default": "#111a22" },
+    { "id": "surface-strong", "type": "color", "label": "Bar color", "description": "Top bar, side lists and bottom bar.", "group": "Colors", "default": "#0b1117" },
+    { "id": "radius", "type": "slider", "label": "Corner radius", "description": "Buttons and menus.", "group": "Shape", "min": 0, "max": 12, "step": 1, "unit": "px", "default": 4 },
+    { "id": "density", "type": "select", "label": "Navigation size", "description": "Text size of the top navigation.", "group": "Shape", "default": "regular",
+      "choices": [
+        { "value": "compact", "label": "Compact" },
+        { "value": "regular", "label": "Regular" },
+        { "value": "roomy", "label": "Roomy" }
+      ] },
+    { "id": "texture", "type": "toggle", "label": "Bottom bar texture", "description": "Draws the bundled image on the bottom bar.", "group": "Shape", "default": true },
+    { "id": "window-labels", "type": "toggle", "label": "Window labels", "description": "Shows which window a style file reached.", "group": "Debug", "default": false }
+  ]
+}

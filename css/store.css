@@ -1,0 +1,5 @@
+:root { --tt-window: "store"; }
+
+#global_header { background: var(--surface-strong, #0b1117) !important; }
+
+.page_content_ctn { border-radius: var(--radius, 4px); }

@@ -1,0 +1,9 @@
+:root { --tt-window: "menus"; }
+
+.steam-ContextMenuPopup,
+.steam-ContextMenu {
+  background: var(--surface-strong, #0b1117);
+  border-radius: var(--radius, 4px);
+}
+
+.steam-ContextMenuHRSeparator { background: color-mix(in srgb, var(--accent, #4fd1c5) 30%, transparent); }

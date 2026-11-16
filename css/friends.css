@@ -1,0 +1,5 @@
+:root { --tt-window: "friends"; }
+
+.steam-FriendsListAnchored { background: var(--surface-strong, #0b1117); }
+
+.steam-FriendsListTabPanel { background: var(--surface, #111a22); }

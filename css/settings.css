@@ -1,0 +1,16 @@
+:root { --tt-window: "settings"; }
+
+.steam-ResponsivePageList--PagedSettingsDialog_PageListColumn {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent, #4fd1c5) 12%, var(--surface-strong, #0b1117)), var(--surface-strong, #0b1117) 45%);
+  border-right: 1px solid color-mix(in srgb, var(--accent, #4fd1c5) 20%, transparent);
+}
+
+.steam-ResponsivePageList--PagedSettingsDialog_Title { color: var(--accent, #4fd1c5); }
+
+.steam-ResponsivePageList--PagedSettingsDialog_PageListItem { border-radius: var(--radius, 4px); }
+
+.steam-ResponsivePageList--PagedSettingsDialog_PageListItem:hover {
+  background: color-mix(in srgb, var(--accent, #4fd1c5) 14%, transparent);
+}
+
+.steam-SettingsModal { background: var(--surface, #111a22); }

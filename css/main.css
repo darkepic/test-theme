@@ -1,0 +1,99 @@
+:root { --tt-window: "main"; }
+
+.steam-OuterFrame { background: var(--surface-strong, #0b1117); }
+
+.steam-FocusNavigationRoot--TopBar {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent, #4fd1c5) 16%, var(--surface-strong, #0b1117)), var(--surface-strong, #0b1117) 45%);
+}
+
+.steam-FocusNavigationRoot--TopBar {
+  border-bottom: 1px solid color-mix(in srgb, var(--accent, #4fd1c5) 35%, transparent);
+}
+
+.steam-FocusNavigationRoot--TitleBar,
+.steam-SuperNavBar { background: transparent; }
+
+.steam-SuperNav--MenuButton { color: #8ea2ac; }
+
+.steam-SuperNav .steam-SuperNavMenu.steam-SuperNav--Selected .steam-SuperNav--MenuButton {
+  color: var(--accent, #4fd1c5);
+  text-shadow: 0 0 1px var(--accent, #4fd1c5);
+}
+
+.steam-SuperNav .steam-SuperNavMenu.steam-SuperNav--Selected .steam-SuperNav--MenuButton::after {
+  background: var(--accent, #4fd1c5);
+}
+
+html[data-theme-density="compact"] .steam-SuperNav { font-size: 12px; }
+html[data-theme-density="regular"] .steam-SuperNav { font-size: 14px; }
+html[data-theme-density="roomy"] .steam-SuperNav { font-size: 16px; }
+
+.steam-LeftListMaxPercentage--LeftListSizableContainer {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent, #4fd1c5) 8%, var(--surface-strong, #0b1117)), var(--surface-strong, #0b1117) 40%);
+  border-right: 1px solid color-mix(in srgb, var(--accent, #4fd1c5) 20%, transparent);
+}
+
+.steam-GameListHomeAndSearch--Container { background: transparent; }
+
+.steam-HomeBox .steam-CollectionIconBox--Bar.steam-CollectionIconBox--Selected {
+  background: color-mix(in srgb, var(--accent, #4fd1c5) 24%, transparent);
+  box-shadow: inset 3px 0 0 var(--accent, #4fd1c5);
+  border-radius: var(--radius, 4px);
+}
+
+.steam-GameListEntryContainer:hover {
+  background: color-mix(in srgb, var(--accent, #4fd1c5) 12%, transparent);
+}
+
+.steam-BranchBar--Button.steam-BranchBar--Active {
+  background: var(--accent, #4fd1c5);
+  color: #06231f;
+}
+
+.steam-HeaderPageControls--Name { color: #ffffff; }
+
+.steam-HeaderPageControls--Name::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 14px;
+  margin-right: 8px;
+  border-radius: 2px;
+  background: var(--accent, #4fd1c5);
+  vertical-align: -1px;
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup { background: var(--surface, #111a22); }
+
+.steam-LibraryHome--Container .steam-LibraryHome,
+.steam-LibraryHome--Container .steam-UpdatesContainer { background: transparent; }
+
+.steam-LibraryHome--Container {
+  background:
+    radial-gradient(1100px 520px at 90% -15%, color-mix(in srgb, var(--accent, #4fd1c5) 30%, transparent), transparent 62%),
+    radial-gradient(800px 400px at -10% 110%, color-mix(in srgb, var(--accent, #4fd1c5) 14%, transparent), transparent 60%),
+    var(--surface, #111a22);
+}
+
+.steam-PartnerEventRowCapsule_Container,
+.steam-PartnerEventRowCapsule_MainImageContainer {
+  border-radius: var(--radius, 4px);
+  overflow: hidden;
+}
+
+.steam-BottomBarContainer--BottomBar {
+  background-color: var(--surface-strong, #0b1117);
+  border-top: 1px solid color-mix(in srgb, var(--accent, #4fd1c5) 30%, transparent);
+}
+
+html[data-theme-texture="true"] .steam-BottomBarContainer--BottomBar {
+  background-image: url("../assets/texture.png");
+}
+
+.steam-AddGameButton,
+.steam-FriendsButton { border-radius: var(--radius, 4px); }
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--accent, #4fd1c5) 40%, transparent);
+  border-radius: var(--radius, 4px);
+}

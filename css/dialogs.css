@@ -1,0 +1,5 @@
+:root { --tt-window: "dialogs"; }
+
+.steam-DialogContent { background: var(--surface, #111a22); }
+
+.steam-DialogButtonRow { border-top: 1px solid color-mix(in srgb, var(--accent, #4fd1c5) 30%, transparent); }

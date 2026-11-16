@@ -1,0 +1,17 @@
+:root { --tt-window: "all"; }
+
+::selection { background: var(--accent, #4fd1c5); color: #0b0e13; }
+
+html[data-theme-window-labels="true"]::after {
+  content: var(--tt-window);
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2147483647;
+  padding: 2px 8px;
+  border-radius: var(--radius, 4px);
+  background: var(--accent, #4fd1c5);
+  color: #0b0e13;
+  font: 700 11px/16px sans-serif;
+  pointer-events: none;
+}
