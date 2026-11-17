@@ -1,30 +1,40 @@
 :root { --tt-window: "menus"; }
 
+html.ContextMenuPopup,
 body.ContextMenuPopupBody,
 .steam-ContextMenuPopup,
 .steam-ContextMenu,
-.steam-BasicContextMenuModal--contextMenuContents,
+.steam-ContextMenuMouseOverlay--contextMenu,
+.steam-ContextMenuMouseOverlay--contextMenuContents,
 .steam-MenuWrapper--MenuPopup,
+.steam-BasicContextMenuModal--contextMenuContents,
 .steam-SuperNav--MenuPopup {
-  background: var(--surface-strong, #0b1117);
-  border: 1px solid var(--tt-border);
-  border-radius: var(--radius, 4px);
+  background: var(--surface-card, #181c24);
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
 }
 
-.steam-BasicContextMenuModal--contextMenuItem,
-.steam-ContextMenuMouseOverlay--contextMenuItem {
-  border-radius: var(--radius, 4px);
+.steam-MenuWrapper--MenuItem,
+.steam-ContextMenuMouseOverlay--contextMenuItem,
+.steam-BasicContextMenuModal--contextMenuItem {
+  border-radius: var(--radius, 6px);
+  color: var(--tt-text);
 }
 
+.steam-MenuWrapper--MenuItem:hover,
+.steam-ContextMenuMouseOverlay--contextMenuItem:hover,
+.steam-ContextMenuMouseOverlay--active,
 .steam-BasicContextMenuModal--contextMenuItem:hover,
 .steam-BasicContextMenuModal--active,
 .steam-BasicContextMenuModal--Selected {
-  background: var(--tt-tint-mid);
+  background: var(--tt-hover);
   color: #ffffff;
 }
 
 .steam-ContextMenuHRSeparator,
+.steam-ContextMenuMouseOverlay--ContextMenuSeparator,
 .steam-BasicContextMenuModal--ContextMenuSeparator {
-  background: var(--tt-border-strong);
+  background: var(--tt-line);
+  border-color: var(--tt-line);
 }

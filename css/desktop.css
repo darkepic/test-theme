@@ -1,7 +1,7 @@
 :root { --tt-window: "desktop"; }
 
 body.DesktopUI {
-  color: #e6edf2;
+  color: var(--tt-text);
 }
 
 .steam-HeaderPageControls--Name,
@@ -9,30 +9,51 @@ body.DesktopUI {
   letter-spacing: -0.01em;
 }
 
+button.DialogButton,
+button.DialogButton:enabled,
 .steam-StandardControl--SettingsDialogButton {
-  background: var(--surface-card, #17232f);
-  border: 1px solid var(--tt-border);
-  border-radius: var(--radius, 4px);
-  color: #e6edf2;
+  background: var(--tt-raised);
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
+  box-shadow: none;
+  color: var(--tt-text);
   transition: background-color 0.14s ease, border-color 0.14s ease;
 }
 
+button.DialogButton:enabled:hover,
 .steam-StandardControl--SettingsDialogButton:hover {
-  background: color-mix(in srgb, var(--accent, #4fd1c5) 18%, var(--surface-card, #17232f));
-  border-color: var(--tt-border-strong);
+  background: var(--tt-hover);
+  border-color: var(--tt-line-strong);
+  color: #ffffff;
+}
+
+button.DialogButton.Primary,
+button.DialogButton.GreenPlay,
+button.DialogButton:enabled.Primary,
+button.DialogButton:enabled.GreenPlay {
+  background: var(--accent, #4fd1c5);
+  border-color: transparent;
+  color: #091318;
+}
+
+button.DialogButton.Primary:hover,
+button.DialogButton.GreenPlay:hover,
+button.DialogButton:enabled.Primary:hover,
+button.DialogButton:enabled.GreenPlay:hover {
+  background: color-mix(in srgb, var(--accent, #4fd1c5) 88%, #ffffff);
+  color: #091318;
 }
 
 .steam-AddGameButton,
 .steam-FriendsButton,
 .steam-DownloadPauseButton {
-  border-radius: var(--radius, 4px);
-  border: 1px solid var(--tt-border);
-  transition: border-color 0.14s ease, background-color 0.14s ease;
+  border-radius: var(--radius, 6px);
+  transition: background-color 0.14s ease, color 0.14s ease;
 }
 
 .steam-AddGameButton:hover,
 .steam-FriendsButton:hover,
 .steam-DownloadPauseButton:hover {
-  border-color: var(--accent, #4fd1c5);
-  background: var(--tt-tint-soft);
+  background: var(--tt-hover);
+  color: #ffffff;
 }

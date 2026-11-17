@@ -1,14 +1,18 @@
 :root {
   --tt-window: "all";
-  --tt-border: color-mix(in srgb, var(--accent, #4fd1c5) 26%, transparent);
-  --tt-border-strong: color-mix(in srgb, var(--accent, #4fd1c5) 55%, transparent);
-  --tt-tint-soft: color-mix(in srgb, var(--accent, #4fd1c5) 12%, transparent);
-  --tt-tint-mid: color-mix(in srgb, var(--accent, #4fd1c5) 24%, transparent);
+  --tt-line: color-mix(in srgb, #ffffff 7%, transparent);
+  --tt-line-strong: color-mix(in srgb, var(--accent, #4fd1c5) 28%, rgba(255, 255, 255, 0.08));
+  --tt-raised: color-mix(in srgb, #ffffff 5%, var(--surface-card, #181c24));
+  --tt-hover: color-mix(in srgb, #ffffff 9%, var(--surface-card, #181c24));
+  --tt-tint-soft: color-mix(in srgb, var(--accent, #4fd1c5) 10%, transparent);
+  --tt-tint-mid: color-mix(in srgb, var(--accent, #4fd1c5) 18%, transparent);
+  --tt-text: #e6edf3;
+  --tt-text-muted: #9aa5b4;
 }
 
 ::selection {
   background: var(--accent, #4fd1c5);
-  color: #0b0e13;
+  color: #091318;
 }
 
 :focus-visible {
@@ -17,8 +21,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -26,12 +30,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: color-mix(in srgb, var(--accent, #4fd1c5) 38%, transparent);
-  border-radius: var(--radius, 4px);
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius, 6px);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: color-mix(in srgb, var(--accent, #4fd1c5) 62%, transparent);
+  background: rgba(255, 255, 255, 0.28);
 }
 
 html[data-theme-window-labels="true"]::after {
@@ -41,9 +45,10 @@ html[data-theme-window-labels="true"]::after {
   bottom: 8px;
   z-index: 2147483647;
   padding: 2px 8px;
-  border-radius: var(--radius, 4px);
-  background: var(--accent, #4fd1c5);
-  color: #0b0e13;
+  border-radius: var(--radius, 6px);
+  background: var(--surface-card, #181c24);
+  border: 1px solid var(--tt-line-strong);
+  color: var(--tt-text);
   font: 700 11px/16px sans-serif;
   pointer-events: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);

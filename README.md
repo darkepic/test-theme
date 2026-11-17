@@ -36,7 +36,7 @@ Open **Settings**, then **LYTE**, then **Themes**, and select **Options** on the
 | Corner radius | Slider, 0 to 12 px | Cards, buttons, inputs and menus |
 | Navigation size | Select | Compact, regular or roomy navigation text |
 | Ambient glow | Toggle | Soft accent highlight behind the Library home and game header |
-| Bottom bar texture | Toggle | Draws the bundled image on the bottom bar |
+| Bottom bar texture | Toggle | Optional pattern overlay on the bottom bar (`off` by default) |
 | Window labels | Toggle | Prints the window target in the lower right corner of every window |
 
 Turn on **Window labels** to check that a style file reached the window you expect.

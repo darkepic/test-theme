@@ -1,30 +1,30 @@
 :root { --tt-window: "web"; }
 
 body {
-  background-color: var(--surface, #111a22);
-  color: #e6edf2;
+  background-color: var(--surface, #12151b);
+  color: var(--tt-text);
 }
 
 #global_header,
 .help_header,
 #footer {
-  background: var(--surface-strong, #0b1117) !important;
-  border-color: var(--tt-border);
+  background: var(--surface-strong, #0c0e13) !important;
+  border-color: var(--tt-line);
 }
 
 .help_main_block,
 .help_wizard_button {
-  background: var(--surface-card, #17232f) !important;
-  border: 1px solid var(--tt-border) !important;
-  border-radius: var(--radius, 4px) !important;
+  background: var(--surface-card, #181c24) !important;
+  border: 1px solid var(--tt-line) !important;
+  border-radius: var(--radius, 6px) !important;
 }
 
 .help_wizard_button:hover {
-  border-color: var(--accent, #4fd1c5) !important;
+  border-color: var(--tt-line-strong) !important;
   background: var(--tt-tint-soft) !important;
 }
 
 ::selection {
   background: var(--accent, #4fd1c5);
-  color: #0b0e13;
+  color: #091318;
 }

@@ -3,7 +3,7 @@
   "type": "theme",
   "name": "Test Theme",
   "description": "A reference theme styling all 12 window targets including desktop, Library home, game details, downloads and web pages with 9 options.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "preview": "assets/preview.png",
   "tags": ["dark", "reference"]

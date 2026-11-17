@@ -16,10 +16,10 @@
   ],
   "options": [
     { "id": "accent", "type": "color", "label": "Accent color", "description": "Highlights, active indicators and focus outlines.", "group": "Colors", "default": "#4fd1c5" },
-    { "id": "surface", "type": "color", "label": "Surface color", "description": "Main pages and settings background.", "group": "Colors", "default": "#111a22" },
-    { "id": "surface-strong", "type": "color", "label": "Bar color", "description": "Top navigation, sidebars, menus and bottom bar.", "group": "Colors", "default": "#0b1117" },
-    { "id": "surface-card", "type": "color", "label": "Card color", "description": "Shelves, dialogs, toast cards and game info panels.", "group": "Colors", "default": "#17232f" },
-    { "id": "radius", "type": "slider", "label": "Corner radius", "description": "Cards, buttons, inputs and menus.", "group": "Shape", "min": 0, "max": 12, "step": 1, "unit": "px", "default": 4 },
+    { "id": "surface", "type": "color", "label": "Surface color", "description": "Main pages and settings background.", "group": "Colors", "default": "#12151b" },
+    { "id": "surface-strong", "type": "color", "label": "Bar color", "description": "Top navigation, sidebars, menus and bottom bar.", "group": "Colors", "default": "#0c0e13" },
+    { "id": "surface-card", "type": "color", "label": "Card color", "description": "Shelves, dialogs, toast cards and game info panels.", "group": "Colors", "default": "#181c24" },
+    { "id": "radius", "type": "slider", "label": "Corner radius", "description": "Cards, buttons, inputs and menus.", "group": "Shape", "min": 0, "max": 12, "step": 1, "unit": "px", "default": 6 },
     { "id": "density", "type": "select", "label": "Navigation size", "description": "Text size of the top navigation bar.", "group": "Shape", "default": "regular",
       "choices": [
         { "value": "compact", "label": "Compact" },
@@ -27,7 +27,7 @@
         { "value": "roomy", "label": "Roomy" }
       ] },
     { "id": "glow", "type": "toggle", "label": "Ambient glow", "description": "Soft accent highlight behind the Library home and game header.", "group": "Shape", "default": true },
-    { "id": "texture", "type": "toggle", "label": "Bottom bar texture", "description": "Draws the bundled pattern on the bottom bar.", "group": "Shape", "default": true },
+    { "id": "texture", "type": "toggle", "label": "Bottom bar texture", "description": "Draws the bundled pattern on the bottom bar.", "group": "Shape", "default": false },
     { "id": "window-labels", "type": "toggle", "label": "Window labels", "description": "Shows which window target a stylesheet reached.", "group": "Debug", "default": false }
   ]
 }

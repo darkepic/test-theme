@@ -1,29 +1,29 @@
 :root { --tt-window: "community"; }
 
 body.flat_page {
-  background: var(--surface, #111a22) !important;
+  background: var(--surface, #12151b) !important;
 }
 
 #global_header {
-  background: var(--surface-strong, #0b1117) !important;
-  border-bottom: 1px solid var(--tt-border-strong);
+  background: var(--surface-strong, #0c0e13) !important;
+  border-bottom: 1px solid var(--tt-line);
 }
 
 .community_home_header,
 .apphub_HomeHeader,
 .profile_header_bg {
-  background: linear-gradient(180deg, var(--surface-card, #17232f), var(--surface, #111a22)) !important;
-  border-bottom: 1px solid var(--tt-border);
+  background: linear-gradient(180deg, var(--surface-card, #181c24), var(--surface, #12151b)) !important;
+  border-bottom: 1px solid var(--tt-line);
 }
 
 .apphub_Card,
 .market_listing_row {
-  background: var(--surface-card, #17232f) !important;
-  border: 1px solid var(--tt-border);
-  border-radius: var(--radius, 4px);
+  background: var(--surface-card, #181c24) !important;
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
 }
 
 #footer {
-  background: var(--surface-strong, #0b1117) !important;
-  border-top: 1px solid var(--tt-border);
+  background: var(--surface-strong, #0c0e13) !important;
+  border-top: 1px solid var(--tt-line);
 }

@@ -5,21 +5,21 @@
 }
 
 .steam-DesktopToastPopup {
-  background: var(--surface-card, #17232f);
-  border: 1px solid var(--tt-border-strong);
+  background: var(--surface-card, #181c24);
+  border: 1px solid var(--tt-line);
   border-left: 3px solid var(--accent, #4fd1c5);
-  border-radius: var(--radius, 4px);
+  border-radius: var(--radius, 6px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
 }
 
 .steam-DesktopToastBackground {
-  background: linear-gradient(120deg, var(--tt-tint-soft), var(--surface-strong, #0b1117) 75%);
+  background: linear-gradient(120deg, var(--tt-tint-soft), var(--surface-strong, #0c0e13) 75%);
 }
 
 .steam-ShortTemplate--Title {
-  color: var(--accent, #4fd1c5);
+  color: var(--tt-text);
 }
 
 .steam-ShortTemplate--StandardNotificationDescription {
-  color: #cbd5e1;
+  color: var(--tt-text-muted);
 }

@@ -2,34 +2,34 @@
 
 body.v6,
 .home_page_body_ctn {
-  background: var(--surface, #111a22) !important;
+  background: var(--surface, #12151b) !important;
 }
 
 #global_header,
 .store_nav_bg {
-  background: var(--surface-strong, #0b1117) !important;
-  border-bottom: 1px solid var(--tt-border-strong);
+  background: var(--surface-strong, #0c0e13) !important;
+  border-bottom: 1px solid var(--tt-line);
 }
 
 .page_content_ctn,
 .carousel_container,
 .home_ctn .store_capsule,
 .tab_item {
-  border-radius: var(--radius, 4px);
+  border-radius: var(--radius, 6px);
 }
 
 .tab_item.focus {
-  background: var(--surface-card, #17232f) !important;
+  background: var(--surface-card, #181c24) !important;
   box-shadow: inset 3px 0 0 var(--accent, #4fd1c5);
 }
 
 .discount_pct {
   background: var(--accent, #4fd1c5) !important;
-  color: #06231f !important;
-  border-radius: var(--radius, 4px);
+  color: #091318 !important;
+  border-radius: var(--radius, 6px);
 }
 
 #footer {
-  background: var(--surface-strong, #0b1117) !important;
-  border-top: 1px solid var(--tt-border);
+  background: var(--surface-strong, #0c0e13) !important;
+  border-top: 1px solid var(--tt-line);
 }
