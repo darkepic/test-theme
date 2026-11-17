@@ -7,7 +7,7 @@
 }
 
 .steam-FocusNavigationRoot--TopBar {
-  border-bottom: 1px solid color-mix(in srgb, var(--accent, #4fd1c5) 35%, transparent);
+  border-bottom: 2px solid color-mix(in srgb, var(--accent, #4fd1c5) 55%, transparent);
 }
 
 .steam-FocusNavigationRoot--TitleBar,
