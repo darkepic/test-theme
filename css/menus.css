@@ -1,9 +1,30 @@
 :root { --tt-window: "menus"; }
 
+body.ContextMenuPopupBody,
 .steam-ContextMenuPopup,
-.steam-ContextMenu {
+.steam-ContextMenu,
+.steam-BasicContextMenuModal--contextMenuContents,
+.steam-MenuWrapper--MenuPopup,
+.steam-SuperNav--MenuPopup {
   background: var(--surface-strong, #0b1117);
+  border: 1px solid var(--tt-border);
+  border-radius: var(--radius, 4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+}
+
+.steam-BasicContextMenuModal--contextMenuItem,
+.steam-ContextMenuMouseOverlay--contextMenuItem {
   border-radius: var(--radius, 4px);
 }
 
-.steam-ContextMenuHRSeparator { background: color-mix(in srgb, var(--accent, #4fd1c5) 30%, transparent); }
+.steam-BasicContextMenuModal--contextMenuItem:hover,
+.steam-BasicContextMenuModal--active,
+.steam-BasicContextMenuModal--Selected {
+  background: var(--tt-tint-mid);
+  color: #ffffff;
+}
+
+.steam-ContextMenuHRSeparator,
+.steam-BasicContextMenuModal--ContextMenuSeparator {
+  background: var(--tt-border-strong);
+}

@@ -1,3 +1,25 @@
 :root { --tt-window: "notifications"; }
 
-body { box-shadow: inset 0 0 0 2px var(--accent, #4fd1c5); }
+.steam-DesktopToastContainer {
+  background: transparent;
+}
+
+.steam-DesktopToastPopup {
+  background: var(--surface-card, #17232f);
+  border: 1px solid var(--tt-border-strong);
+  border-left: 3px solid var(--accent, #4fd1c5);
+  border-radius: var(--radius, 4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+}
+
+.steam-DesktopToastBackground {
+  background: linear-gradient(120deg, var(--tt-tint-soft), var(--surface-strong, #0b1117) 75%);
+}
+
+.steam-ShortTemplate--Title {
+  color: var(--accent, #4fd1c5);
+}
+
+.steam-ShortTemplate--StandardNotificationDescription {
+  color: #cbd5e1;
+}

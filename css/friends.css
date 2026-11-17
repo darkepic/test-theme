@@ -1,5 +1,39 @@
 :root { --tt-window: "friends"; }
 
-.steam-FriendsListAnchored { background: var(--surface-strong, #0b1117); }
+html.friendsui-container,
+body.popup_chat_frame {
+  background: var(--surface-strong, #0b1117);
+}
 
-.steam-FriendsListTabPanel { background: var(--surface, #111a22); }
+body.HoverPopupBody {
+  background: var(--surface-card, #17232f);
+  border: 1px solid var(--tt-border-strong);
+  border-radius: var(--radius, 4px);
+}
+
+.steam-FriendsListAnchored {
+  background: var(--surface-strong, #0b1117);
+  border-top: 2px solid var(--tt-border-strong);
+}
+
+.steam-FriendsListContainer {
+  background: var(--surface, #111a22);
+}
+
+.steam-FriendsListTabPanel {
+  background: var(--surface-card, #17232f);
+  border-top: 1px solid var(--tt-border);
+}
+
+.steam-ChatTabContent_ChatRoom {
+  background: var(--surface, #111a22);
+}
+
+.steam-ChatTabContent_ChatRoomName {
+  color: var(--accent, #4fd1c5);
+}
+
+.steam-ChatEntry:hover {
+  background: var(--tt-tint-soft);
+  border-radius: var(--radius, 4px);
+}

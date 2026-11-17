@@ -1,3 +1,30 @@
 :root { --tt-window: "web"; }
 
-::selection { background: var(--accent, #4fd1c5); color: #0b0e13; }
+body {
+  background-color: var(--surface, #111a22);
+  color: #e6edf2;
+}
+
+#global_header,
+.help_header,
+#footer {
+  background: var(--surface-strong, #0b1117) !important;
+  border-color: var(--tt-border);
+}
+
+.help_main_block,
+.help_wizard_button {
+  background: var(--surface-card, #17232f) !important;
+  border: 1px solid var(--tt-border) !important;
+  border-radius: var(--radius, 4px) !important;
+}
+
+.help_wizard_button:hover {
+  border-color: var(--accent, #4fd1c5) !important;
+  background: var(--tt-tint-soft) !important;
+}
+
+::selection {
+  background: var(--accent, #4fd1c5);
+  color: #0b0e13;
+}

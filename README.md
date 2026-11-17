@@ -1,26 +1,27 @@
 <h1 align="center">Test Theme</h1>
 
-<p align="center">A dark reference theme for LYTE that styles every window type, with colors, a slider, a select and toggles you can change in the settings.</p>
+<p align="center">A dark reference theme for LYTE that styles all 12 window targets, with colors, a slider, a select, toggles and a bundled image you can change in Settings.</p>
 
 <p align="center"><img src="assets/preview.png" alt="Test Theme in the Steam main window"></p>
 
 ## What it styles
 
-Every window type that LYTE can reach has its own stylesheet, so you can see which file does what.
+Every window target that LYTE supports has its own stylesheet, including shared desktop styling across Steam client windows.
 
 | Window | File | What changes |
 | --- | --- | --- |
-| All windows | `css/all.css` | Selection color and the optional window label |
-| Main window | `css/main.css` | Top bar, navigation, library background, game list, section headers, bottom bar with a texture |
-| Settings | `css/settings.css` | Page list, title and background |
-| Friends | `css/friends.css` | Friends list background |
-| Overlay | `css/overlay.css` | Accent frame |
-| Menus | `css/menus.css` | Menu background, corners and separators |
-| Notifications | `css/notifications.css` | Accent frame |
-| Dialogs | `css/dialogs.css` | Dialog content and button row |
-| Store | `css/store.css` | Store header and page corners |
-| Community | `css/community.css` | Community header |
-| Web pages | `css/web.css` | Selection color |
+| All windows | `css/all.css` | Selection highlight, focus outlines, custom scrollbars and the optional window label |
+| Desktop windows | `css/desktop.css` | Shared Steam client buttons, dialog controls and header typography (excludes Store, Community and Web) |
+| Main window | `css/main.css` | Top bar, navigation, sidebar, search box, game list, section headers, home shelves, game details, downloads and bottom bar with texture |
+| Settings | `css/settings.css` | Page list gradient, active item accent bar, title color and content column |
+| Friends | `css/friends.css` | Friends list, tabs, chat rooms, chat hover rows and friend hover popups |
+| Overlay | `css/overlay.css` | Accent frame, translucent overlay panels, browser, notes, screenshots and timeline bar |
+| Menus | `css/menus.css` | Menu popups, rounded items, active highlight and separators |
+| Notifications | `css/notifications.css` | Accent-bordered toast cards, gradient background and notification typography |
+| Dialogs | `css/dialogs.css` | Modal frames, headers, add-game and properties surfaces and bottom button row |
+| Store | `css/store.css` | Store header, body surface, rounded capsules, active row bar, discount badge and footer |
+| Community | `css/community.css` | Community header, hub and workshop cards, market rows and footer |
+| Web pages | `css/web.css` | Support page panels, wizard buttons, selection highlight and footer |
 
 ## Options
 
@@ -28,13 +29,15 @@ Open **Settings**, then **LYTE**, then **Themes**, and select **Options** on the
 
 | Option | Type | What it does |
 | --- | --- | --- |
-| Accent color | Color | Highlights, selection and focus |
-| Surface color | Color | Library and settings background |
-| Bar color | Color | Top bar, side lists and bottom bar |
-| Corner radius | Slider, 0 to 12 px | Buttons and menus |
+| Accent color | Color | Highlights, active indicators and focus outlines |
+| Surface color | Color | Main pages, dialog content and store/community/web background |
+| Bar color | Color | Top bar, sidebars, menus, bottom bar and web headers |
+| Card color | Color | Shelves, dialogs, toast cards and game info panels |
+| Corner radius | Slider, 0 to 12 px | Cards, buttons, inputs and menus |
 | Navigation size | Select | Compact, regular or roomy navigation text |
+| Ambient glow | Toggle | Soft accent highlight behind the Library home and game header |
 | Bottom bar texture | Toggle | Draws the bundled image on the bottom bar |
-| Window labels | Toggle | Prints the window type in the lower right corner of every window |
+| Window labels | Toggle | Prints the window target in the lower right corner of every window |
 
 Turn on **Window labels** to check that a style file reached the window you expect.
 

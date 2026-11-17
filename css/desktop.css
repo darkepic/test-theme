@@ -1,0 +1,38 @@
+:root { --tt-window: "desktop"; }
+
+body.DesktopUI {
+  color: #e6edf2;
+}
+
+.steam-HeaderPageControls--Name,
+.steam-ResponsivePageList--PagedSettingsDialog_Title {
+  letter-spacing: -0.01em;
+}
+
+.steam-StandardControl--SettingsDialogButton {
+  background: var(--surface-card, #17232f);
+  border: 1px solid var(--tt-border);
+  border-radius: var(--radius, 4px);
+  color: #e6edf2;
+  transition: background-color 0.14s ease, border-color 0.14s ease;
+}
+
+.steam-StandardControl--SettingsDialogButton:hover {
+  background: color-mix(in srgb, var(--accent, #4fd1c5) 18%, var(--surface-card, #17232f));
+  border-color: var(--tt-border-strong);
+}
+
+.steam-AddGameButton,
+.steam-FriendsButton,
+.steam-DownloadPauseButton {
+  border-radius: var(--radius, 4px);
+  border: 1px solid var(--tt-border);
+  transition: border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.steam-AddGameButton:hover,
+.steam-FriendsButton:hover,
+.steam-DownloadPauseButton:hover {
+  border-color: var(--accent, #4fd1c5);
+  background: var(--tt-tint-soft);
+}

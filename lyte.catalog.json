@@ -2,8 +2,8 @@
   "schema": 1,
   "type": "theme",
   "name": "Test Theme",
-  "description": "A small reference theme that styles every window type and uses colors, a slider, a select, toggles and a bundled image.",
-  "version": "1.0.2",
+  "description": "A reference theme styling all 12 window targets including desktop, Library home, game details, downloads and web pages with 9 options.",
+  "version": "1.0.3",
   "license": "MIT",
   "preview": "assets/preview.png",
   "tags": ["dark", "reference"]

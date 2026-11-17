@@ -1,5 +1,35 @@
 :root { --tt-window: "store"; }
 
-#global_header { background: var(--surface-strong, #0b1117) !important; }
+body.v6,
+.home_page_body_ctn {
+  background: var(--surface, #111a22) !important;
+}
 
-.page_content_ctn { border-radius: var(--radius, 4px); }
+#global_header,
+.store_nav_bg {
+  background: var(--surface-strong, #0b1117) !important;
+  border-bottom: 1px solid var(--tt-border-strong);
+}
+
+.page_content_ctn,
+.carousel_container,
+.home_ctn .store_capsule,
+.tab_item {
+  border-radius: var(--radius, 4px);
+}
+
+.tab_item.focus {
+  background: var(--surface-card, #17232f) !important;
+  box-shadow: inset 3px 0 0 var(--accent, #4fd1c5);
+}
+
+.discount_pct {
+  background: var(--accent, #4fd1c5) !important;
+  color: #06231f !important;
+  border-radius: var(--radius, 4px);
+}
+
+#footer {
+  background: var(--surface-strong, #0b1117) !important;
+  border-top: 1px solid var(--tt-border);
+}
