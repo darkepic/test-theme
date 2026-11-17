@@ -24,24 +24,24 @@ button.DialogButton:enabled:hover,
 .steam-StandardControl--SettingsDialogButton:hover {
   background: var(--tt-hover);
   border-color: var(--tt-line-strong);
-  color: #ffffff;
+  color: var(--tt-text);
 }
 
 button.DialogButton.Primary,
 button.DialogButton.GreenPlay,
 button.DialogButton:enabled.Primary,
 button.DialogButton:enabled.GreenPlay {
-  background: var(--accent, #4fd1c5);
+  background: var(--accent, #c8f542);
   border-color: transparent;
-  color: #091318;
+  color: var(--accent-ink, #0c0f02);
 }
 
 button.DialogButton.Primary:hover,
 button.DialogButton.GreenPlay:hover,
 button.DialogButton:enabled.Primary:hover,
 button.DialogButton:enabled.GreenPlay:hover {
-  background: color-mix(in srgb, var(--accent, #4fd1c5) 88%, #ffffff);
-  color: #091318;
+  background: color-mix(in srgb, var(--accent, #c8f542) 86%, #ffffff);
+  color: var(--accent-ink, #0c0f02);
 }
 
 .steam-AddGameButton,
@@ -55,5 +55,5 @@ button.DialogButton:enabled.GreenPlay:hover {
 .steam-FriendsButton:hover,
 .steam-DownloadPauseButton:hover {
   background: var(--tt-hover);
-  color: #ffffff;
+  color: var(--tt-text);
 }

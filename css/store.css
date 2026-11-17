@@ -2,34 +2,38 @@
 
 body.v6,
 .home_page_body_ctn {
-  background: var(--surface, #12151b) !important;
+  background: var(--surface, #111113) !important;
+  color: var(--tt-text);
 }
 
 #global_header,
 .store_nav_bg {
-  background: var(--surface-strong, #0c0e13) !important;
+  background: var(--surface-strong, #09090a) !important;
   border-bottom: 1px solid var(--tt-line);
 }
 
 .page_content_ctn,
-.carousel_container,
-.home_ctn .store_capsule,
 .tab_item {
   border-radius: var(--radius, 6px);
 }
 
+.carousel_container,
+.home_ctn .store_capsule {
+  border-radius: var(--cover-radius, 8px);
+}
+
 .tab_item.focus {
-  background: var(--surface-card, #181c24) !important;
-  box-shadow: inset 3px 0 0 var(--accent, #4fd1c5);
+  background: var(--surface-card, #18181b) !important;
+  box-shadow: inset 3px 0 0 var(--accent, #c8f542);
 }
 
 .discount_pct {
-  background: var(--accent, #4fd1c5) !important;
-  color: #091318 !important;
+  background: var(--accent, #c8f542) !important;
+  color: var(--accent-ink, #0c0f02) !important;
   border-radius: var(--radius, 6px);
 }
 
 #footer {
-  background: var(--surface-strong, #0c0e13) !important;
+  background: var(--surface-strong, #09090a) !important;
   border-top: 1px solid var(--tt-line);
 }

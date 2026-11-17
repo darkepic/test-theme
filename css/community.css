@@ -1,29 +1,30 @@
 :root { --tt-window: "community"; }
 
 body.flat_page {
-  background: var(--surface, #12151b) !important;
+  background: var(--surface, #111113) !important;
+  color: var(--tt-text);
 }
 
 #global_header {
-  background: var(--surface-strong, #0c0e13) !important;
+  background: var(--surface-strong, #09090a) !important;
   border-bottom: 1px solid var(--tt-line);
 }
 
 .community_home_header,
 .apphub_HomeHeader,
 .profile_header_bg {
-  background: linear-gradient(180deg, var(--surface-card, #181c24), var(--surface, #12151b)) !important;
+  background: linear-gradient(180deg, var(--surface-card, #18181b), var(--surface, #111113)) !important;
   border-bottom: 1px solid var(--tt-line);
 }
 
 .apphub_Card,
 .market_listing_row {
-  background: var(--surface-card, #181c24) !important;
+  background: var(--surface-card, #18181b) !important;
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
 }
 
 #footer {
-  background: var(--surface-strong, #0c0e13) !important;
+  background: var(--surface-strong, #09090a) !important;
   border-top: 1px solid var(--tt-line);
 }

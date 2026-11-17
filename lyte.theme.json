@@ -15,19 +15,45 @@
     { "window": "web", "file": "css/web.css" }
   ],
   "options": [
-    { "id": "accent", "type": "color", "label": "Accent color", "description": "Highlights, active indicators and focus outlines.", "group": "Colors", "default": "#4fd1c5" },
-    { "id": "surface", "type": "color", "label": "Surface color", "description": "Main pages and settings background.", "group": "Colors", "default": "#12151b" },
-    { "id": "surface-strong", "type": "color", "label": "Bar color", "description": "Top navigation, sidebars, menus and bottom bar.", "group": "Colors", "default": "#0c0e13" },
-    { "id": "surface-card", "type": "color", "label": "Card color", "description": "Shelves, dialogs, toast cards and game info panels.", "group": "Colors", "default": "#181c24" },
-    { "id": "radius", "type": "slider", "label": "Corner radius", "description": "Cards, buttons, inputs and menus.", "group": "Shape", "min": 0, "max": 12, "step": 1, "unit": "px", "default": 6 },
-    { "id": "density", "type": "select", "label": "Navigation size", "description": "Text size of the top navigation bar.", "group": "Shape", "default": "regular",
+    { "id": "accent", "type": "color", "label": "Accent color", "description": "Highlights, active indicators, badges and focus outlines.", "group": "Colors", "default": "#c8f542" },
+    { "id": "accent-ink", "type": "color", "label": "Text on accent", "description": "Text and icons on accent buttons and discount badges.", "group": "Colors", "default": "#0c0f02" },
+    { "id": "surface-strong", "type": "color", "label": "Frame and bar color", "description": "Top bar, bottom bar, sidebars, menus and web headers.", "group": "Colors", "default": "#09090a" },
+    { "id": "surface", "type": "color", "label": "Background color", "description": "Main Library, Settings content, Friends list and Store pages.", "group": "Colors", "default": "#111113" },
+    { "id": "surface-card", "type": "color", "label": "Card color", "description": "Shelves, settings rows, dialogs, toast cards and info panels.", "group": "Colors", "default": "#18181b" },
+    { "id": "surface-raised", "type": "color", "label": "Control color", "description": "Buttons, search inputs, pills and hovered cards.", "group": "Colors", "default": "#222227" },
+    { "id": "text", "type": "color", "label": "Primary text", "description": "Headings, titles and active labels.", "group": "Colors", "default": "#ededee" },
+    { "id": "text-muted", "type": "color", "label": "Muted text", "description": "Secondary labels, navigation items and metadata.", "group": "Colors", "default": "#9b9ba2" },
+    { "id": "ingame", "type": "color", "label": "In-game status", "description": "Running games and friends currently in a game.", "group": "Colors", "default": "#7fce5b" },
+    { "id": "online", "type": "color", "label": "Online status", "description": "Friends currently online.", "group": "Colors", "default": "#57b9e6" },
+    { "id": "radius", "type": "slider", "label": "Corner radius", "description": "Buttons, cards, inputs, menus and dialogs.", "group": "Shape & Layout", "min": 0, "max": 14, "step": 1, "unit": "px", "default": 6 },
+    { "id": "cover-radius", "type": "slider", "label": "Cover radius", "description": "Library game covers, event capsules and store tiles.", "group": "Shape & Layout", "min": 0, "max": 16, "step": 1, "unit": "px", "default": 8 },
+    { "id": "sidebar-width", "type": "slider", "label": "Sidebar width", "description": "Minimum width of the Library game list sidebar.", "group": "Shape & Layout", "min": 220, "max": 360, "step": 10, "unit": "px", "default": 260 },
+    { "id": "density", "type": "select", "label": "Navigation size", "description": "Text size of the top navigation bar.", "group": "Shape & Layout", "default": "regular",
       "choices": [
         { "value": "compact", "label": "Compact" },
         { "value": "regular", "label": "Regular" },
         { "value": "roomy", "label": "Roomy" }
       ] },
-    { "id": "glow", "type": "toggle", "label": "Ambient glow", "description": "Soft accent highlight behind the Library home and game header.", "group": "Shape", "default": true },
-    { "id": "texture", "type": "toggle", "label": "Bottom bar texture", "description": "Draws the bundled pattern on the bottom bar.", "group": "Shape", "default": false },
+    { "id": "shelf-style", "type": "select", "label": "Library shelves", "description": "Open shelves or framed card containers on Library home.", "group": "Shape & Layout", "default": "clean",
+      "choices": [
+        { "value": "clean", "label": "Clean open" },
+        { "value": "cards", "label": "Framed cards" }
+      ] },
+    { "id": "border-strength", "type": "select", "label": "Surface borders", "description": "Border intensity on bars, cards, menus and dialogs.", "group": "Shape & Layout", "default": "subtle",
+      "choices": [
+        { "value": "none", "label": "None" },
+        { "value": "subtle", "label": "Subtle hairline" },
+        { "value": "accent", "label": "Accent tinted" }
+      ] },
+    { "id": "glow", "type": "toggle", "label": "Ambient glow", "description": "Soft accent spotlight behind Library home and game headers.", "group": "Effects", "default": true },
+    { "id": "cover-lift", "type": "toggle", "label": "Cover hover lift", "description": "Gently lifts and shadows game covers on hover.", "group": "Effects", "default": true },
+    { "id": "scrollbar", "type": "select", "label": "Scrollbar style", "description": "Scrollbar look across all Steam windows.", "group": "Effects", "default": "minimal",
+      "choices": [
+        { "value": "minimal", "label": "Minimal neutral" },
+        { "value": "accent", "label": "Accent thumb" },
+        { "value": "hidden", "label": "Hidden" }
+      ] },
+    { "id": "texture", "type": "toggle", "label": "Bottom bar texture", "description": "Optional pattern overlay on the bottom bar.", "group": "Effects", "default": false },
     { "id": "window-labels", "type": "toggle", "label": "Window labels", "description": "Shows which window target a stylesheet reached.", "group": "Debug", "default": false }
   ]
 }

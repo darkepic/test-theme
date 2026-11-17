@@ -11,7 +11,7 @@ body.popup_chat_frame,
 .chatDialogs,
 .ChatTabs.titleBarContainer,
 .chatRoomGroupNavFooter {
-  background: var(--surface, #12151b) !important;
+  background: var(--surface, #111113) !important;
   box-shadow: none !important;
   color: var(--tt-text);
 }
@@ -25,7 +25,7 @@ body.popup_chat_frame,
 
 .friendListHeaderContainer .currentUserContainer,
 .quickAccessFriends {
-  background: var(--surface-card, #181c24) !important;
+  background: var(--surface-card, #18181b) !important;
   border-bottom: 1px solid var(--tt-line) !important;
   border-radius: var(--radius, 6px);
 }
@@ -33,7 +33,7 @@ body.popup_chat_frame,
 .socialTabContainer .friendTab.socialListTab,
 .FriendsListChatSection .friendsListSectionTitle.chatSectionTitle,
 .friendGroup .groupName {
-  background: var(--surface-strong, #0c0e13) !important;
+  background: var(--surface-strong, #09090a) !important;
   border-radius: var(--radius, 6px);
   color: var(--tt-text) !important;
 }
@@ -46,32 +46,40 @@ body.popup_chat_frame,
 
 .friendlistListContainer .friend:hover,
 .ChatRoomList .ChatRoomListGroupItem:hover {
-  background: var(--surface-card, #181c24) !important;
+  background: var(--surface-card, #18181b) !important;
+}
+
+.friendlistListContainer .friend.online:not(.ingame) .playerName {
+  color: var(--online, #57b9e6) !important;
+}
+
+.friendlistListContainer .friend.ingame .richPresenceLabel {
+  color: var(--ingame, #7fce5b) !important;
 }
 
 body.HoverPopupBody,
 .miniProfileHoverInner .miniProfileContent {
-  background: var(--surface-card, #181c24);
+  background: var(--surface-card, #18181b);
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
 }
 
 .steam-FriendsListAnchored {
-  background: var(--surface-strong, #0c0e13);
+  background: var(--surface-strong, #09090a);
   border-top: 1px solid var(--tt-line);
 }
 
 .steam-FriendsListContainer {
-  background: var(--surface, #12151b);
+  background: var(--surface, #111113);
 }
 
 .steam-FriendsListTabPanel {
-  background: var(--surface-card, #181c24);
+  background: var(--surface-card, #18181b);
   border-top: 1px solid var(--tt-line);
 }
 
 .steam-ChatTabContent_ChatRoom {
-  background: var(--surface, #12151b);
+  background: var(--surface, #111113);
 }
 
 .steam-ChatTabContent_ChatRoomName {

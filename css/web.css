@@ -1,20 +1,20 @@
 :root { --tt-window: "web"; }
 
 body {
-  background-color: var(--surface, #12151b);
+  background-color: var(--surface, #111113);
   color: var(--tt-text);
 }
 
 #global_header,
 .help_header,
 #footer {
-  background: var(--surface-strong, #0c0e13) !important;
+  background: var(--surface-strong, #09090a) !important;
   border-color: var(--tt-line);
 }
 
 .help_main_block,
 .help_wizard_button {
-  background: var(--surface-card, #181c24) !important;
+  background: var(--surface-card, #18181b) !important;
   border: 1px solid var(--tt-line) !important;
   border-radius: var(--radius, 6px) !important;
 }
@@ -25,6 +25,6 @@ body {
 }
 
 ::selection {
-  background: var(--accent, #4fd1c5);
-  color: #091318;
+  background: var(--accent, #c8f542);
+  color: var(--accent-ink, #0c0f02);
 }

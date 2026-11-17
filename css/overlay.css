@@ -1,7 +1,7 @@
 :root { --tt-window: "overlay"; }
 
 .steam-animationTransitionMS--OverlayPopupBody {
-  background: color-mix(in srgb, var(--surface, #12151b) 94%, transparent);
+  background: color-mix(in srgb, var(--surface, #111113) 94%, transparent);
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
 }
@@ -11,12 +11,12 @@
 .steam-OverlayScreenshotManagerContainer,
 .steam-SoundtrackControls,
 .steam-TimelineContainer {
-  background: var(--surface-card, #181c24);
+  background: var(--surface-card, #18181b);
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
 }
 
 .steam-PlayerAndTimeline--TimelineAndControls {
-  background: color-mix(in srgb, var(--surface-strong, #0c0e13) 92%, transparent);
+  background: color-mix(in srgb, var(--surface-strong, #09090a) 92%, transparent);
   border-top: 1px solid var(--tt-line);
 }

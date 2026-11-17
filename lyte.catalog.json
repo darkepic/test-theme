@@ -2,8 +2,8 @@
   "schema": 1,
   "type": "theme",
   "name": "Test Theme",
-  "description": "A reference theme styling all 12 window targets including desktop, Library home, game details, downloads and web pages with 9 options.",
-  "version": "1.0.4",
+  "description": "A customizable dark theme in LYTE colors styling all 12 window targets with 10 color pickers and 11 layout and effect options.",
+  "version": "1.0.5",
   "license": "MIT",
   "preview": "assets/preview.png",
   "tags": ["dark", "reference"]

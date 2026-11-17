@@ -9,7 +9,7 @@ body.ContextMenuPopupBody,
 .steam-MenuWrapper--MenuPopup,
 .steam-BasicContextMenuModal--contextMenuContents,
 .steam-SuperNav--MenuPopup {
-  background: var(--surface-card, #181c24);
+  background: var(--surface-card, #18181b);
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
@@ -29,7 +29,7 @@ body.ContextMenuPopupBody,
 .steam-BasicContextMenuModal--active,
 .steam-BasicContextMenuModal--Selected {
   background: var(--tt-hover);
-  color: #ffffff;
+  color: var(--tt-text);
 }
 
 .steam-ContextMenuHRSeparator,

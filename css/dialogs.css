@@ -1,7 +1,7 @@
 :root { --tt-window: "dialogs"; }
 
 body.ModalDialogBody {
-  background: var(--surface, #12151b);
+  background: var(--surface, #111113);
   color: var(--tt-text);
 }
 
@@ -9,7 +9,7 @@ body.ModalDialogBody {
 .steam-ModalDialogContent,
 .steam-AddNonSteamGameDialog,
 .steam-UninstallDialog {
-  background: var(--surface-card, #181c24);
+  background: var(--surface-card, #18181b);
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
 }
@@ -26,7 +26,7 @@ body.ModalDialogBody {
 .steam-DialogContent,
 .steam-AddNonSteamGameDialogContent,
 .steam-AppProperties {
-  background: var(--surface, #12151b);
+  background: var(--surface, #111113);
 }
 
 .steam-DialogButtonRow {

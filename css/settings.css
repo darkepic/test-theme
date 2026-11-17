@@ -5,12 +5,12 @@ body.ModalDialogBody,
 .steam-ResponsivePageList--PagedSettingsDialog,
 .steam-ResponsivePageList--PagedSettingsDialog_PageContent,
 .steam-ResponsivePageList--PagedSettingDialog_ContentColumn {
-  background: var(--surface, #12151b);
+  background: var(--surface, #111113);
   color: var(--tt-text);
 }
 
 .steam-ResponsivePageList--PagedSettingsDialog_PageListColumn {
-  background: var(--surface-strong, #0c0e13);
+  background: var(--surface-strong, #09090a);
   border-right: 1px solid var(--tt-line);
 }
 
@@ -31,9 +31,9 @@ body.ModalDialogBody,
 
 .steam-ResponsivePageList--PagedSettingsDialog_PageListItem.steam-ResponsivePageList--Active,
 .steam-PagedSettingsDialog_PageList_ShowTitle--Active {
-  background: var(--surface-card, #181c24);
+  background: var(--surface-card, #18181b);
   color: var(--tt-text);
-  box-shadow: inset 3px 0 0 var(--accent, #4fd1c5);
+  box-shadow: inset 3px 0 0 var(--accent, #c8f542);
 }
 
 .steam-PageListSeparator {
@@ -41,6 +41,6 @@ body.ModalDialogBody,
 }
 
 .steam-Field.steam-GamepadDialogContent--Background {
-  background: var(--surface-card, #181c24);
+  background: var(--surface-card, #18181b);
   border-radius: var(--radius, 6px);
 }
