@@ -1,6 +1,6 @@
 :root { --tt-window: "overlay"; }
 
-.steam-animationTransitionMS--OverlayPopupBody {
+html.ModalDialogPopup > body.fullheight.ModalDialogBody {
   background: color-mix(in srgb, var(--surface, #111113) 94%, transparent);
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);

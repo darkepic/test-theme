@@ -44,14 +44,14 @@ button.DialogButton:enabled.GreenPlay:hover {
   color: var(--accent-ink, #0c0f02);
 }
 
-.steam-AddGameButton,
+.steam-BottomBarContainer--AddGameButton,
 .steam-FriendsButton,
 .steam-DownloadPauseButton {
   border-radius: var(--radius, 6px);
   transition: background-color 0.14s ease, color 0.14s ease;
 }
 
-.steam-AddGameButton:hover,
+.steam-BottomBarContainer--AddGameButton:hover,
 .steam-FriendsButton:hover,
 .steam-DownloadPauseButton:hover {
   background: var(--tt-hover);

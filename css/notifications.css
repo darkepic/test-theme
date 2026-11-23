@@ -20,6 +20,6 @@
   color: var(--tt-text);
 }
 
-.steam-ShortTemplate--StandardNotificationDescription {
+.steam-ShortTemplate--StandardTemplateContainer .steam-ShortTemplate--Content > .steam-ShortTemplate--Header + div {
   color: var(--tt-text-muted);
 }

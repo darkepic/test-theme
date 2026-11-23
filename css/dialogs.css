@@ -5,8 +5,6 @@ body.ModalDialogBody {
   color: var(--tt-text);
 }
 
-.steam-SimpleModalDialog,
-.steam-ModalDialogContent,
 .steam-AddNonSteamGameDialog,
 .steam-UninstallDialog {
   background: var(--surface-card, #18181b);
@@ -14,13 +12,8 @@ body.ModalDialogBody {
   border-radius: var(--radius, 6px);
 }
 
-.steam-SimpleModalDialogHeader,
-.steam-AddNonSteamGameDialog--DialogHeader {
+.steam-AddNonSteamGameDialog .DialogHeader {
   border-bottom: 1px solid var(--tt-line);
-}
-
-.steam-SimpleModalDialogTitle {
-  color: var(--tt-text);
 }
 
 .steam-DialogContent,

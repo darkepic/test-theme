@@ -39,8 +39,3 @@ body.ModalDialogBody,
 .steam-PageListSeparator {
   background: var(--tt-line);
 }
-
-.steam-Field.steam-GamepadDialogContent--Background {
-  background: var(--surface-card, #18181b);
-  border-radius: var(--radius, 6px);
-}

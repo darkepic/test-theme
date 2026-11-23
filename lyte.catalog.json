@@ -3,7 +3,7 @@
   "type": "theme",
   "name": "Test Theme",
   "description": "A customizable dark theme in LYTE colors styling all 12 window targets with 10 color pickers and 11 layout and effect options.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "preview": "assets/preview.png",
   "tags": ["dark", "reference"]
