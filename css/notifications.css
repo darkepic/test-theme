@@ -5,19 +5,30 @@
 }
 
 .steam-DesktopToastPopup {
-  background: var(--surface-card, #18181b);
-  border: 1px solid var(--tt-line);
+  background: var(--tt-glass);
+  backdrop-filter: var(--tt-material);
+  border: 1px solid var(--tt-glass-edge);
   border-left: 3px solid var(--accent, #c8f542);
-  border-radius: var(--radius, 6px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+  border-radius: var(--tt-card-radius);
+  box-shadow: var(--tt-glass-shadow);
+  font-family: var(--tt-body);
 }
 
-.steam-DesktopToastBackground {
-  background: linear-gradient(120deg, var(--tt-tint-soft), var(--surface-strong, #09090a) 75%);
+.steam-DesktopToastPopup::before {
+  background: linear-gradient(120deg, var(--tt-tint-mid), transparent 75%);
+  border-radius: inherit;
+}
+
+.steam-DesktopToastPopup .steam-DesktopToastBackground,
+.steam-DesktopToastPopup:hover .steam-DesktopToastBackground {
+  color: var(--accent, #c8f542);
 }
 
 .steam-ShortTemplate--Title {
   color: var(--tt-text);
+  font-family: var(--tt-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .steam-ShortTemplate--StandardTemplateContainer .steam-ShortTemplate--Content > .steam-ShortTemplate--Header + div {

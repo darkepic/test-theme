@@ -1,6 +1,6 @@
 <h1 align="center">Test Theme</h1>
 
-<p align="center">A customizable dark theme in LYTE colors styling all 12 window targets with 10 color pickers and 11 layout and effect options.</p>
+<p align="center">The LYTE website palette, typography and frosted surfaces across 12 Steam window targets, with 22 customization options.</p>
 
 <p align="center"><img src="assets/preview.png" alt="Test Theme in the Steam main window"></p>
 
@@ -16,8 +16,8 @@ Every window target that LYTE supports has its own stylesheet, including shared 
 | Settings | `css/settings.css` | Unified dark sidebar and content columns, active accent bar, field cards and dividers |
 | Friends | `css/friends.css` | Friends list, quick-access row, custom online/in-game status colors, chat windows, hover cards and menus |
 | Overlay | `css/overlay.css` | Translucent overlay panels, browser, notes, screenshots and timeline bar |
-| Menus | `css/menus.css` | Menu popups, rounded items, hover highlight and separators |
-| Notifications | `css/notifications.css` | Accent-bordered toast cards, subtle tint background and notification typography |
+| Menus | `css/menus.css` | Frosted dropdowns and context menus, accent selection and keyboard focus |
+| Notifications | `css/notifications.css` | Frosted toast cards, accent hover and notification typography |
 | Dialogs | `css/dialogs.css` | Modal frames, headers, properties surfaces and bottom button row |
 | Store | `css/store.css` | Store header, body surface, cover radii, active row bar, discount badge and footer |
 | Community | `css/community.css` | Responsive page frame, hubs, profiles, groups, Workshop, Market and discussions |
@@ -53,10 +53,15 @@ Open **Settings**, then **LYTE**, then **Themes**, and select **Options** on the
 | Library shelves | Select | `Clean open` | Open shelves or framed card containers on Library home |
 | Surface borders | Select | `Subtle hairline` | None, subtle hairline or accent-tinted borders |
 | Ambient glow | Toggle | `true` | Soft accent spotlight behind Library home and game headers |
+| Frosted glass | Select | `Light` | Off keeps floating surfaces opaque, Light softens the backdrop, and Strong uses the website's 20 px blur and 160% saturation |
 | Cover hover lift | Toggle | `true` | Gently lifts and shadows game covers on hover |
 | Scrollbar style | Select | `Minimal neutral` | Minimal neutral, accent thumb or hidden scrollbars |
 | Bottom bar texture | Toggle | `false` | Optional pattern overlay on the bottom bar |
 | Window labels | Toggle | `false` | Prints the window target in the lower right corner of every window |
+
+## Typography
+
+The theme embeds the Latin Inter and Inter Tight webfonts so that the desktop client does not need to fetch them. Other scripts use the system font fallback. See the [Inter license](assets/OFL-Inter.txt) and [Inter Tight license](assets/OFL-InterTight.txt).
 
 Turn on **Window labels** to check that a style file reached the window you expect.
 

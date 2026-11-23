@@ -1,3 +1,5 @@
+@import "fonts.css";
+
 :root {
   --tt-window: "all";
   --tt-line: rgba(255, 255, 255, 0.08);
@@ -8,16 +10,52 @@
   --tt-tint-mid: color-mix(in srgb, var(--accent, #c8f542) 18%, transparent);
   --tt-text: var(--text, #ededee);
   --tt-text-muted: var(--text-muted, #9b9ba2);
+  --tt-ink: var(--accent-ink, #0c0f02);
+  --tt-accent-hover: color-mix(in srgb, var(--accent, #c8f542) 92%, #fff);
+  --tt-body: Inter, system-ui, sans-serif;
+  --tt-display: "Inter Tight", Inter, system-ui, sans-serif;
+  --tt-card-radius: calc(var(--radius, 6px) + 8px);
+  --tt-glass: color-mix(in srgb, var(--surface-strong, #09090a) 80%, transparent);
+  --tt-material: blur(12px) saturate(135%);
+  --tt-glass-edge: rgba(255, 255, 255, 0.07);
+  --tt-glass-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 12px 32px -14px rgba(0, 0, 0, 0.8);
+}
+
+html[data-theme-glass="off"] {
+  --tt-glass: var(--surface-strong, #09090a);
+  --tt-material: none;
+}
+
+html[data-theme-glass="strong"] {
+  --tt-glass: color-mix(in srgb, var(--surface-strong, #09090a) 64%, transparent);
+  --tt-material: blur(20px) saturate(160%);
 }
 
 html[data-theme-border-strength="none"] {
   --tt-line: transparent;
   --tt-line-strong: transparent;
+  --tt-glass-edge: transparent;
 }
 
 html[data-theme-border-strength="accent"] {
   --tt-line: color-mix(in srgb, var(--accent, #c8f542) 22%, transparent);
   --tt-line-strong: color-mix(in srgb, var(--accent, #c8f542) 48%, transparent);
+  --tt-glass-edge: var(--tt-line);
+}
+
+body {
+  font-family: var(--tt-body);
+  font-optical-sizing: auto;
+}
+
+button, input, select, textarea {
+  font-family: var(--tt-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--tt-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 ::selection {
@@ -27,7 +65,7 @@ html[data-theme-border-strength="accent"] {
 
 :focus-visible {
   outline: 2px solid var(--accent, #c8f542);
-  outline-offset: 1px;
+  outline-offset: 2px;
 }
 
 ::-webkit-scrollbar {

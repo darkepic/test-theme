@@ -1,17 +1,22 @@
 :root { --tt-window: "desktop"; }
 
 body.DesktopUI {
+  font-family: var(--tt-body);
   color: var(--tt-text);
 }
 
 .steam-HeaderPageControls--Name,
-.steam-ResponsivePageList--PagedSettingsDialog_Title {
-  letter-spacing: -0.01em;
+.steam-ResponsivePageList--PagedSettingsDialog_Title,
+.DialogHeader {
+  font-family: var(--tt-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 button.DialogButton,
 button.DialogButton:enabled,
 .steam-StandardControl--SettingsDialogButton {
+  font-family: var(--tt-body);
   background: var(--tt-raised);
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
@@ -27,21 +32,20 @@ button.DialogButton:enabled:hover,
   color: var(--tt-text);
 }
 
-button.DialogButton.Primary,
-button.DialogButton.GreenPlay,
-button.DialogButton:enabled.Primary,
-button.DialogButton:enabled.GreenPlay {
-  background: var(--accent, #c8f542);
+button.DialogButton:is(.Primary, .GreenPlay),
+button.DialogButton:is(.Primary, .GreenPlay):enabled {
+  background: var(--accent, #c8f542) !important;
   border-color: transparent;
-  color: var(--accent-ink, #0c0f02);
+  color: var(--tt-ink) !important;
+  font-weight: 600;
 }
 
-button.DialogButton.Primary:hover,
-button.DialogButton.GreenPlay:hover,
-button.DialogButton:enabled.Primary:hover,
-button.DialogButton:enabled.GreenPlay:hover {
-  background: color-mix(in srgb, var(--accent, #c8f542) 86%, #ffffff);
-  color: var(--accent-ink, #0c0f02);
+button.DialogButton:is(.Primary, .GreenPlay):enabled:hover {
+  background: var(--tt-accent-hover) !important;
+}
+
+button.DialogButton:is(.Primary, .GreenPlay):disabled {
+  opacity: 0.6;
 }
 
 .steam-BottomBarContainer--AddGameButton,
@@ -58,10 +62,18 @@ button.DialogButton:enabled.GreenPlay:hover {
   color: var(--tt-text);
 }
 
-.steam-AddNonSteamGameDialog,
-.steam-AddNonSteamGameDialogContent {
-  background: var(--surface, #111113);
+.steam-AddNonSteamGameDialog {
+  background: var(--tt-glass) !important;
+  backdrop-filter: var(--tt-material);
+  border: 1px solid var(--tt-glass-edge);
+  border-radius: var(--tt-card-radius);
+  box-shadow: var(--tt-glass-shadow);
   color: var(--tt-text);
+}
+
+.steam-AddNonSteamGameDialog .DialogContent,
+.steam-AddNonSteamGameDialogContent {
+  background: transparent !important;
 }
 
 .steam-AddNonSteamGameDialog .DialogHeader {
@@ -79,9 +91,14 @@ button.DialogButton:enabled.GreenPlay:hover {
   background: var(--surface-card, #18181b);
   box-shadow: none;
   border: 1px solid var(--tt-line);
-  border-radius: var(--radius, 6px);
+  border-radius: var(--tt-card-radius);
 }
 
-.steam-AddNonSteamGameDialogContent .steam-AddNonSteamGameDialog--GameRow:hover {
+.steam-AddNonSteamGameDialogContent .steam-AddNonSteamGameDialog--GameRow:hover,
+.steam-AddNonSteamGameDialogContent .steam-AddNonSteamGameDialog--GameRow:focus-within {
   background-color: var(--tt-hover);
+}
+
+.steam-AddNonSteamGameDialogContent .steam-AddNonSteamGameDialog--GameRow:has(input:checked) {
+  box-shadow: inset 2px 0 0 var(--accent, #c8f542);
 }

@@ -3,6 +3,7 @@
 body {
   background-color: var(--surface, #111113) !important;
   color: var(--tt-text);
+  font-family: var(--tt-body);
 }
 
 body:not(.profile_page),
@@ -34,8 +35,28 @@ body:not(.profile_page) .apphub_background {
   border-top: 1px solid var(--tt-line);
 }
 
+div#footer.compact .footer_content #footerText,
+div#footer.compact .footer_content #footerText a {
+  color: var(--tt-text-muted);
+}
+
+div#footer.compact .footer_content #footerText a:hover {
+  color: var(--tt-text);
+}
+
 .FullModalOverlay .ModalOverlayBackground {
   background: color-mix(in srgb, var(--surface-strong, #09090a) 80%, transparent);
+}
+
+.community_home_header,
+.community_home_header_bg {
+  border-radius: var(--tt-card-radius);
+}
+
+.community_home_header,
+.community_home_tabs,
+.apphub_CardContentMain {
+  font-family: var(--tt-body);
 }
 
 .community_home_header,
@@ -54,6 +75,9 @@ body:not(.profile_page) .apphub_background {
 .actual_persona_name,
 .market_title_text {
   color: var(--tt-text) !important;
+  font-family: var(--tt-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .community_home_subtitle,
@@ -71,7 +95,12 @@ body:not(.profile_page) .apphub_background {
 .workshopItemDetailsHeader,
 .workshopItemControlCtn,
 .market_content_block,
-.market_search_sidebar_contents,
+.market_search_sidebar_contents {
+  background: var(--surface-card, #18181b) !important;
+  border: 1px solid var(--tt-line);
+  border-radius: var(--tt-card-radius);
+}
+
 .market_listing_row,
 .forum_topic,
 .discussions_forum_row {
@@ -88,7 +117,7 @@ body:not(.profile_page) .apphub_background {
 .workshopAppsRow > .app {
   background: var(--surface-card, #18181b);
   box-shadow: inset 0 0 0 1px var(--tt-line);
-  border-radius: var(--radius, 6px);
+  border-radius: var(--tt-card-radius);
 }
 
 .workshopAppsRow > .app:hover {
@@ -100,21 +129,88 @@ body:not(.profile_page) .apphub_background {
   background: linear-gradient(transparent, var(--surface-card, #18181b)) !important;
 }
 
+.apphub_CardContentGuideTitle {
+  background: var(--tt-raised);
+  border-radius: var(--radius, 6px);
+}
+
 .apphub_CardContentPreviewImage,
 .workshopItemDetailsHeader img {
   border-radius: var(--cover-radius, 8px);
 }
 
-.community_home_search_app_input,
-.community_home_search_players_input,
+.community_home_search_apps,
+.community_home_search_players {
+  background: var(--tt-raised);
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
+  box-shadow: none;
+}
+
+.community_home_search_apps:focus-within,
+.community_home_search_players:focus-within {
+  border-color: var(--accent, #c8f542);
+  outline: 2px solid var(--accent, #c8f542);
+  outline-offset: 2px;
+}
+
+input.community_home_search_app_input,
+input.community_home_search_players_input {
+  background: transparent;
+  color: var(--tt-text);
+  font: inherit;
+}
+
+.community_home_search_box .appHubSearchTextForm input[type="image"] {
+  filter: grayscale(1);
+}
+
+.community_home_search_divider {
+  background: var(--tt-line);
+  border: 0;
+}
+
 #workshopSearchText,
 .market_search_box_container input,
 .discussionSearchTextContainer input,
 .responsive_tab_select {
-  background-color: var(--tt-raised) !important;
+  background: var(--tt-raised) !important;
   color: var(--tt-text) !important;
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
+}
+
+.community_home_sort_buttons > a {
+  background: var(--tt-raised);
+  color: var(--tt-text) !important;
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
+  font-family: var(--tt-body);
+  font-weight: 600;
+  letter-spacing: -0.006em;
+}
+
+.community_home_sort_buttons > a > span {
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.community_home_sort_buttons > a:hover {
+  background: var(--tt-hover);
+}
+
+.community_home_sort_buttons > a.btn_darkblue_white_innerfade {
+  background: var(--accent, #c8f542);
+  color: var(--tt-ink) !important;
+  border-color: transparent;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.community_home_sort_buttons > a.btn_darkblue_white_innerfade:hover {
+  background: var(--tt-accent-hover) !important;
+  color: var(--tt-ink) !important;
 }
 
 .apphub_sectionTab,
@@ -130,6 +226,12 @@ body:not(.profile_page) .apphub_background {
 }
 
 .apphub_sectionTab.active,
+.apphub_sectionTab.active:hover,
+.apphub_responsive_tab .responsive_tab_control {
+  color: var(--tt-text) !important;
+  border-bottom-color: var(--accent, #c8f542);
+}
+
 .group_tab.active,
 .market_tab_well_tab_active {
   color: var(--tt-text) !important;

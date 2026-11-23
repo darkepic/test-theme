@@ -2,7 +2,7 @@
   "schema": 2,
   "styles": [
     { "window": "all", "file": "css/all.css" },
-    { "window": "desktop", "file": "css/desktop.css" },
+    { "window": "desktop", "files": ["css/desktop.css", "css/menus.css"] },
     { "window": "main", "file": "css/main.css" },
     { "window": "settings", "file": "css/settings.css" },
     { "window": "friends", "file": "css/friends.css" },
@@ -46,6 +46,12 @@
         { "value": "accent", "label": "Accent tinted" }
       ] },
     { "id": "glow", "type": "toggle", "label": "Ambient glow", "description": "Soft accent spotlight behind Library home and game headers.", "group": "Effects", "default": true },
+    { "id": "glass", "type": "select", "label": "Frosted glass", "description": "Blur the backdrop behind floating menus, panels and window headers.", "group": "Effects", "default": "light",
+      "choices": [
+        { "value": "off", "label": "Off" },
+        { "value": "light", "label": "Light" },
+        { "value": "strong", "label": "Strong" }
+      ] },
     { "id": "cover-lift", "type": "toggle", "label": "Cover hover lift", "description": "Gently lifts and shadows game covers on hover.", "group": "Effects", "default": true },
     { "id": "scrollbar", "type": "select", "label": "Scrollbar style", "description": "Scrollbar look across all Steam windows.", "group": "Effects", "default": "minimal",
       "choices": [

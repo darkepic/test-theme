@@ -5,15 +5,13 @@ body.ModalDialogBody {
   color: var(--tt-text);
 }
 
-.steam-UninstallDialog {
-  background: var(--surface-card, #18181b);
-  border: 1px solid var(--tt-line);
-  border-radius: var(--radius, 6px);
-}
-
-.steam-DialogContent,
+.steam-DialogContent:has(.steam-DialogButtonRow),
 .steam-AppProperties {
-  background: var(--surface, #111113);
+  background: var(--tt-glass);
+  backdrop-filter: var(--tt-material);
+  border: 1px solid var(--tt-glass-edge);
+  border-radius: var(--tt-card-radius);
+  box-shadow: var(--tt-glass-shadow);
 }
 
 .steam-DialogButtonRow {
