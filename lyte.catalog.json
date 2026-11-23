@@ -3,7 +3,7 @@
   "type": "theme",
   "name": "Test Theme",
   "description": "A customizable dark theme with the LYTE website palette, frosted glass, and 22 options across 12 window targets.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "preview": "assets/preview.png",
   "tags": ["dark", "reference"]
