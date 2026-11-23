@@ -7,7 +7,7 @@ body.ModalDialogBody {
 
 .steam-DialogContent:has(.steam-DialogButtonRow),
 .steam-AppProperties {
-  background: var(--tt-glass);
+  background: var(--tt-glass-glint), var(--tt-glass);
   backdrop-filter: var(--tt-material);
   border: 1px solid var(--tt-glass-edge);
   border-radius: var(--tt-card-radius);

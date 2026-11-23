@@ -8,7 +8,7 @@ html:root body.ContextMenuPopupBody {
 :root :is(.steam-ContextMenu, .steam-ContextMenuMouseOverlay--contextMenu,
   .steam-MenuWrapper--MenuPopup, .steam-BasicContextMenuModal--contextMenuContents, .steam-SuperNav--MenuPopup,
   .steam-DialogDropDownMenu._DialogInputContainer) {
-  background: var(--tt-glass);
+  background: var(--tt-glass-glint), var(--tt-glass);
   backdrop-filter: var(--tt-material);
   border: 1px solid var(--tt-glass-edge);
   border-radius: var(--tt-card-radius);
@@ -17,7 +17,8 @@ html:root body.ContextMenuPopupBody {
 }
 
 html.steam-ContextMenuPopup .steam-ContextMenuMouseOverlay--contextMenuContents {
-  background-color: transparent;
+  background: transparent;
+  border-radius: inherit;
 }
 
 :root :is(.steam-MenuWrapper--MenuItem, .steam-ContextMenuMouseOverlay--contextMenuItem,

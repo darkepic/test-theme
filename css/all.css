@@ -15,20 +15,22 @@
   --tt-body: Inter, system-ui, sans-serif;
   --tt-display: "Inter Tight", Inter, system-ui, sans-serif;
   --tt-card-radius: calc(var(--radius, 6px) + 8px);
-  --tt-glass: color-mix(in srgb, var(--surface-strong, #09090a) 80%, transparent);
-  --tt-material: blur(12px) saturate(135%);
+  --tt-glass: color-mix(in srgb, var(--surface-strong, #09090a) 66%, transparent);
+  --tt-glass-glint: linear-gradient(165deg, rgba(255, 255, 255, 0.085), transparent 65%);
+  --tt-material: blur(18px) saturate(150%);
   --tt-glass-edge: rgba(255, 255, 255, 0.07);
   --tt-glass-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 12px 32px -14px rgba(0, 0, 0, 0.8);
 }
 
 html[data-theme-glass="off"] {
   --tt-glass: var(--surface-strong, #09090a);
+  --tt-glass-glint: none;
   --tt-material: none;
 }
 
 html[data-theme-glass="strong"] {
-  --tt-glass: color-mix(in srgb, var(--surface-strong, #09090a) 64%, transparent);
-  --tt-material: blur(20px) saturate(160%);
+  --tt-glass: color-mix(in srgb, var(--surface-strong, #09090a) 52%, transparent);
+  --tt-material: blur(26px) saturate(170%);
 }
 
 html[data-theme-border-strength="none"] {

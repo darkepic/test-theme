@@ -5,7 +5,7 @@
 }
 
 .steam-DesktopToastPopup {
-  background: var(--tt-glass);
+  background: var(--tt-glass-glint), var(--tt-glass);
   backdrop-filter: var(--tt-material);
   border: 1px solid var(--tt-glass-edge);
   border-left: 3px solid var(--accent, #c8f542);

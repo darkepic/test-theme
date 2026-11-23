@@ -63,7 +63,7 @@ button.DialogButton:is(.Primary, .GreenPlay):disabled {
 }
 
 .steam-AddNonSteamGameDialog {
-  background: var(--tt-glass) !important;
+  background: var(--tt-glass-glint), var(--tt-glass) !important;
   backdrop-filter: var(--tt-material);
   border: 1px solid var(--tt-glass-edge);
   border-radius: var(--tt-card-radius);
@@ -92,6 +92,8 @@ button.DialogButton:is(.Primary, .GreenPlay):disabled {
   box-shadow: none;
   border: 1px solid var(--tt-line);
   border-radius: var(--tt-card-radius);
+  background-clip: padding-box;
+  clip-path: inset(0 round var(--tt-card-radius));
 }
 
 .steam-AddNonSteamGameDialogContent .steam-AddNonSteamGameDialog--GameRow:hover,

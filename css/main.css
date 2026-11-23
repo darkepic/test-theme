@@ -1,6 +1,14 @@
-:root { --tt-window: "main"; }
+:root {
+  --tt-window: "main";
+  --tt-game-gutter: clamp(8px, 1.2vw, 18px);
+}
 
 .steam-OuterFrame {
+  background: var(--surface-strong, #09090a);
+}
+
+.steam-OuterFrame > .steam-FocusNavigationRoot--TopBar + div >
+  :is(.HighPerfMode, .LowPerfMode) > div:first-child:empty {
   background: var(--surface-strong, #09090a);
 }
 
@@ -74,6 +82,20 @@ html[data-theme-density="roomy"] .steam-SuperNav { font-size: 16px; }
 .steam-HomeBox,
 .steam-ViewFiltersBar--Bar {
   background: transparent;
+}
+
+.steam-GameListHomeAndSearch--Container > :has(a[href="/library/collections"]) {
+  background: transparent;
+}
+
+.steam-GameListHomeAndSearch--Container a[href="/library/collections"] {
+  background: var(--tt-raised);
+  border-radius: var(--radius, 6px);
+  box-shadow: inset 0 0 0 1px var(--tt-line);
+}
+
+.steam-GameListHomeAndSearch--Container a[href="/library/collections"]:hover {
+  background: var(--tt-hover);
 }
 
 .steam-ViewFiltersBar--SearchBar,
@@ -164,6 +186,10 @@ html[data-theme-density="roomy"] .steam-SuperNav { font-size: 16px; }
   background: var(--surface, #111113);
 }
 
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup > div > .steam-PlayBarLabel--Container + div > div {
+  background: var(--surface, #111113);
+}
+
 html[data-theme-glow="true"] .steam-LibraryHome--Container {
   background:
     radial-gradient(900px 440px at 85% -15%, color-mix(in srgb, var(--accent, #c8f542) 11%, transparent), transparent 62%),
@@ -205,14 +231,56 @@ html[data-theme-cover-lift="true"] .steam-LibraryItemBox:hover {
   border-bottom: 1px solid var(--tt-line);
 }
 
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-TopCapsule {
+  width: auto;
+  margin: var(--tt-game-gutter) var(--tt-game-gutter) 0;
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-TopCapsule--HeaderBackgroundImage >
+  .steam-TopCapsule--ImgContainer {
+  clip-path: inset(0 round var(--tt-card-radius));
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-PlayBarLabel--Container:has(~ .steam-LinksSection) {
+  width: auto;
+  margin-inline: calc(var(--tt-game-gutter) + 4px);
+}
+
+@media (min-width: 960px) {
+  .steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-PlayBarLabel--Container:has(~ .steam-LinksSection) {
+    position: relative;
+    z-index: 2;
+    margin-block-start: -18px;
+  }
+}
+
 .steam-PlaySection,
 .steam-PlayBarLabel--Container > :has(> .steam-PlayBarLabel--InnerContainer),
 .LowPerfMode .steam-PlayBarLabel--StickyHeader > :has(> .steam-PlayBarLabel--InnerContainer) {
-  background: var(--tt-glass);
+  background: var(--tt-glass-glint), var(--tt-glass);
   border: 1px solid var(--tt-glass-edge);
   border-radius: var(--tt-card-radius);
   box-shadow: var(--tt-glass-shadow);
   backdrop-filter: var(--tt-material);
+}
+
+.steam-PlayBarLabel--Container .steam-PlayBarLabel--GameStatsSection {
+  gap: 5px;
+}
+
+.steam-PlayBarLabel--Container .steam-PlayBarLabel--GameStat {
+  background: color-mix(in srgb, var(--surface-card, #18181b) 72%, transparent);
+  border-radius: var(--radius, 6px);
+  box-shadow: inset 0 0 0 1px var(--tt-line);
+  padding-inline: clamp(5px, 0.8vw, 12px);
+}
+
+.steam-PlayBarLabel--Container .steam-PlayBarLabel--GameStat :is(.steam-PlayBarLabel, .steam-PlayBarLabel--GameStatIcon) {
+  color: var(--tt-text-muted);
+}
+
+.steam-PlayBarLabel--Container .steam-PlayBarLabel--GameStat .steam-PlayBarLabel--PlayBarDetailLabel {
+  color: var(--tt-text);
 }
 
 :is(.steam-PlayBarLabel--Container, .steam-PlaySection)
@@ -224,6 +292,23 @@ html[data-theme-cover-lift="true"] .steam-LibraryItemBox:hover {
   text-shadow: none;
   --library-actionbutton-icon-hover-color: var(--tt-ink);
   --library-actionbutton-green-icon-hover-fill: var(--tt-ink);
+}
+
+.steam-PlayBarLabel--Container .steam-PlayButtonContainer:has(> .steam-PlayButtonContainer--StreamingSelector) {
+  gap: 1px;
+}
+
+.steam-PlayBarLabel--Container .steam-PlayButtonContainer:has(> .steam-PlayButtonContainer--StreamingSelector)
+  > .steam-PlayButtonContainer--PlayButton {
+  margin-inline-end: 0;
+  border-start-end-radius: 2px;
+  border-end-end-radius: 2px;
+}
+
+.steam-PlayBarLabel--Container .steam-PlayButtonContainer > .steam-PlayButtonContainer--StreamingSelector {
+  margin-inline-start: 0;
+  border-start-start-radius: 2px;
+  border-end-start-radius: 2px;
 }
 
 :is(.steam-PlayBarLabel--Container, .steam-PlaySection)
@@ -291,12 +376,13 @@ html[data-theme-glow="true"] .steam-LeftListMaxPercentage--AppDetailsTransitionG
 }
 
 .steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-Event .steam-PartnerEventFeaturedHeader {
-  background: var(--tt-raised);
+  background: var(--tt-glass-glint), var(--tt-glass);
   color: var(--accent, #c8f542);
   border-bottom: 1px solid var(--tt-line);
+  backdrop-filter: var(--tt-material);
 }
 
-.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-Event:has(.steam-PartnerEventFeaturedHeader) {
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-Event:has(.steam-PartnerEventFeaturedHeader):not(:has(> .steam-PartnerEventFeaturedHeader)) {
   background: var(--surface-card, #18181b);
   border: 1px solid var(--tt-line);
   border-image: none;
@@ -305,8 +391,19 @@ html[data-theme-glow="true"] .steam-LeftListMaxPercentage--AppDetailsTransitionG
   overflow: clip;
 }
 
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-Event:has(> .steam-PartnerEventFeaturedHeader) {
+  background: transparent;
+  border: 0;
+  border-image: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-LinksSection > .steam-AppDetailsSectionContainer {
-  background: var(--tt-raised) !important;
+  background: var(--tt-glass-glint), var(--tt-glass) !important;
+  backdrop-filter: var(--tt-material);
+  border: 1px solid var(--tt-glass-edge);
+  box-shadow: var(--tt-glass-shadow);
 }
 
 .steam-LinksSection .steam-LinksSection--Link {
@@ -371,7 +468,7 @@ html[data-theme-glow="true"] .steam-LeftListMaxPercentage--AppDetailsTransitionG
 }
 
 .steam-DownloadsPage--ActiveItemRightColumn .steam-GraphAndStats--DownloadGraphStatsWrapper {
-  background: var(--tt-glass);
+  background: var(--tt-glass-glint), var(--tt-glass);
   border: 1px solid var(--tt-glass-edge);
   border-radius: var(--tt-card-radius);
   box-shadow: var(--tt-glass-shadow);
@@ -444,8 +541,9 @@ html[data-theme-glow="true"] .steam-LeftListMaxPercentage--AppDetailsTransitionG
 
 .steam-DownloadGraphWrapper,
 .steam-DownloadStatusContainer {
-  background: var(--surface-card, #18181b);
-  border: 1px solid var(--tt-line);
+  background: var(--tt-glass-glint), var(--tt-glass);
+  backdrop-filter: var(--tt-material);
+  border: 1px solid var(--tt-glass-edge);
   border-radius: var(--tt-card-radius);
 }
 

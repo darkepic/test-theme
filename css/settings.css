@@ -39,3 +39,68 @@ body.ModalDialogBody,
 .steam-PageListSeparator {
   background: var(--tt-line);
 }
+
+section[id^="lyte-settings-"][role="tabpanel"] {
+  background: var(--surface, #111113) !important;
+  color: var(--tt-text) !important;
+  color-scheme: dark;
+}
+
+section[id^="lyte-settings-"] :is(.lyte-setting, .lyte-summary, .lyte-preference, .lyte-package, .lyte-install, .lyte-folder-row, .lyte-empty, .lyte-hero) {
+  background: var(--tt-glass-glint), var(--surface-card, #18181b) !important;
+  border: 1px solid var(--tt-line);
+  border-radius: var(--tt-card-radius) !important;
+}
+
+section[id^="lyte-settings-"] .lyte-option {
+  background: var(--surface, #111113) !important;
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px) !important;
+}
+
+section[id^="lyte-settings-"] :is(button:not(.lyte-dropdown-option, [role="switch"]), a.lyte-button, select, input:not([type="range"])) {
+  background: var(--tt-raised) !important;
+  color: var(--tt-text) !important;
+  border: 1px solid var(--tt-line) !important;
+  border-radius: var(--radius, 6px) !important;
+}
+
+section[id^="lyte-settings-"] :is(button:enabled:not(.lyte-dropdown-option, [role="switch"]), a.lyte-button):hover {
+  background: var(--tt-hover) !important;
+}
+
+section[id^="lyte-settings-"] .lyte-install button[type="submit"]:enabled {
+  background: var(--accent, #c8f542) !important;
+  color: var(--tt-ink) !important;
+}
+
+section[id^="lyte-settings-"] :is(a, button, select, input):focus-visible {
+  outline-color: var(--accent, #c8f542) !important;
+}
+
+section[id^="lyte-settings-"] .lyte-dropdown-arrow {
+  color: var(--accent, #c8f542) !important;
+}
+
+section[id^="lyte-settings-"] .lyte-dropdown-menu {
+  background: var(--tt-glass-glint), var(--tt-glass) !important;
+  backdrop-filter: var(--tt-material);
+  border: 1px solid var(--tt-glass-edge);
+  border-radius: var(--tt-card-radius) !important;
+  box-shadow: var(--tt-glass-shadow) !important;
+  padding: 4px !important;
+}
+
+section[id^="lyte-settings-"] .lyte-dropdown-option {
+  border-radius: var(--radius, 6px) !important;
+}
+
+section[id^="lyte-settings-"] .lyte-dropdown-option[aria-selected="true"],
+section[id^="lyte-settings-"] .lyte-dropdown-option:hover:enabled {
+  background: var(--tt-tint-mid) !important;
+  color: var(--tt-text) !important;
+}
+
+section[id^="lyte-settings-"] .lyte-dropdown-option[aria-selected="true"] {
+  box-shadow: inset 2px 0 0 var(--accent, #c8f542);
+}
