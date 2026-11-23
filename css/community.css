@@ -1,30 +1,137 @@
 :root { --tt-window: "community"; }
 
-body.flat_page {
-  background: var(--surface, #111113) !important;
+body {
+  background-color: var(--surface, #111113) !important;
   color: var(--tt-text);
 }
 
-#global_header {
+body:not(.profile_page),
+body:not(.profile_page) .apphub_background {
+  background: var(--surface, #111113) !important;
+}
+
+.responsive_page_frame,
+.responsive_page_frame > .responsive_page_content,
+#responsive_page_template_content {
+  background: transparent;
+}
+
+#global_header,
+.responsive_header,
+#responsive_page_menu,
+#responsive_page_local_menu,
+#footer {
   background: var(--surface-strong, #09090a) !important;
+  color: var(--tt-text);
+}
+
+#global_header,
+.responsive_header {
   border-bottom: 1px solid var(--tt-line);
+}
+
+#footer {
+  border-top: 1px solid var(--tt-line);
+}
+
+.FullModalOverlay .ModalOverlayBackground {
+  background: color-mix(in srgb, var(--surface-strong, #09090a) 80%, transparent);
 }
 
 .community_home_header,
+.community_home_header_bg,
 .apphub_HomeHeader,
+.market_header_bg,
+.grouppage_header,
 .profile_header_bg {
-  background: linear-gradient(180deg, var(--surface-card, #18181b), var(--surface, #111113)) !important;
-  border-bottom: 1px solid var(--tt-line);
+  background-color: var(--surface-card, #18181b) !important;
+  color: var(--tt-text);
 }
 
+.community_home_title,
+.apphub_AppName,
+.grouppage_header_name,
+.actual_persona_name,
+.market_title_text {
+  color: var(--tt-text) !important;
+}
+
+.community_home_subtitle,
+.apphub_CardMetaData,
+.market_listing_game_name {
+  color: var(--tt-text-muted) !important;
+}
+
+.community_home_shortcut_content,
+.community_home_search_content,
 .apphub_Card,
-.market_listing_row {
+.group_overview_announcement,
+.profile_content,
+.profile_customization,
+.workshopItemDetailsHeader,
+.workshopItemControlCtn,
+.market_content_block,
+.market_search_sidebar_contents,
+.market_listing_row,
+.forum_topic,
+.discussions_forum_row {
   background: var(--surface-card, #18181b) !important;
   border: 1px solid var(--tt-line);
   border-radius: var(--radius, 6px);
 }
 
-#footer {
-  background: var(--surface-strong, #09090a) !important;
-  border-top: 1px solid var(--tt-line);
+:is(.apphub_Card, .market_listing_row, .forum_topic, .discussions_forum_row):hover {
+  background: var(--tt-hover) !important;
+  border-color: var(--tt-line-strong);
+}
+
+.workshopAppsRow > .app {
+  background: var(--surface-card, #18181b);
+  box-shadow: inset 0 0 0 1px var(--tt-line);
+  border-radius: var(--radius, 6px);
+}
+
+.workshopAppsRow > .app:hover {
+  background: var(--tt-hover);
+  box-shadow: inset 0 0 0 1px var(--tt-line-strong);
+}
+
+.apphub_CardContentNewsFade {
+  background: linear-gradient(transparent, var(--surface-card, #18181b)) !important;
+}
+
+.apphub_CardContentPreviewImage,
+.workshopItemDetailsHeader img {
+  border-radius: var(--cover-radius, 8px);
+}
+
+.community_home_search_app_input,
+.community_home_search_players_input,
+#workshopSearchText,
+.market_search_box_container input,
+.discussionSearchTextContainer input,
+.responsive_tab_select {
+  background-color: var(--tt-raised) !important;
+  color: var(--tt-text) !important;
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
+}
+
+.apphub_sectionTab,
+.group_tab,
+.market_tab_well_tab {
+  color: var(--tt-text-muted) !important;
+}
+
+.apphub_sectionTab:hover,
+.group_tab:hover,
+.market_tab_well_tab:hover {
+  color: var(--tt-text) !important;
+}
+
+.apphub_sectionTab.active,
+.group_tab.active,
+.market_tab_well_tab_active {
+  color: var(--tt-text) !important;
+  box-shadow: inset 0 -2px 0 var(--accent, #c8f542);
 }

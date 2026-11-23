@@ -57,3 +57,31 @@ button.DialogButton:enabled.GreenPlay:hover {
   background: var(--tt-hover);
   color: var(--tt-text);
 }
+
+.steam-AddNonSteamGameDialog,
+.steam-AddNonSteamGameDialogContent {
+  background: var(--surface, #111113);
+  color: var(--tt-text);
+}
+
+.steam-AddNonSteamGameDialog .DialogHeader {
+  border-bottom: 1px solid var(--tt-line);
+}
+
+.steam-AddNonSteamGameDialogContent .DialogTextInputBase,
+.steam-AddNonSteamGameDialogContent .steam-AddNonSteamGameDialog--Header {
+  background-color: var(--tt-raised);
+  color: var(--tt-text);
+  border-radius: var(--radius, 6px);
+}
+
+.steam-AddNonSteamGameDialogContent .steam-AddNonSteamGameDialog--GameList {
+  background: var(--surface-card, #18181b);
+  box-shadow: none;
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
+}
+
+.steam-AddNonSteamGameDialogContent .steam-AddNonSteamGameDialog--GameRow:hover {
+  background-color: var(--tt-hover);
+}

@@ -53,6 +53,7 @@ body.popup_chat_frame,
   color: var(--online, #57b9e6) !important;
 }
 
+.friendlistListContainer .friend.ingame .playerName,
 .friendlistListContainer .friend.ingame .richPresenceLabel {
   color: var(--ingame, #7fce5b) !important;
 }

@@ -11,16 +11,16 @@ Every window target that LYTE supports has its own stylesheet, including shared 
 | Window | File | What changes |
 | --- | --- | --- |
 | All windows | `css/all.css` | Color tokens, border modes, selection highlight, focus outlines, scrollbar styles and window labels |
-| Desktop windows | `css/desktop.css` | Shared Steam client buttons, dialog controls and header typography (excludes Store, Community and Web) |
-| Main window | `css/main.css` | Top bar, navigation, sidebar width, search box, game list, open or framed shelves, game covers, details, downloads and bottom bar |
+| Desktop windows | `css/desktop.css` | Shared client controls and the search, table and game rows in the Add a Non-Steam Game dialog |
+| Main window | `css/main.css` | Navigation, game list and shelves, game detail activity and side panels, download queue and graph surroundings |
 | Settings | `css/settings.css` | Unified dark sidebar and content columns, active accent bar, field cards and dividers |
 | Friends | `css/friends.css` | Friends list, quick-access row, custom online/in-game status colors, chat windows, hover cards and menus |
 | Overlay | `css/overlay.css` | Translucent overlay panels, browser, notes, screenshots and timeline bar |
 | Menus | `css/menus.css` | Menu popups, rounded items, hover highlight and separators |
 | Notifications | `css/notifications.css` | Accent-bordered toast cards, subtle tint background and notification typography |
-| Dialogs | `css/dialogs.css` | Modal frames, headers, add-game and properties surfaces and bottom button row |
+| Dialogs | `css/dialogs.css` | Modal frames, headers, properties surfaces and bottom button row |
 | Store | `css/store.css` | Store header, body surface, cover radii, active row bar, discount badge and footer |
-| Community | `css/community.css` | Community header, hub and workshop cards, market rows and footer |
+| Community | `css/community.css` | Responsive page frame, hubs, profiles, groups, Workshop, Market and discussions |
 | Web pages | `css/web.css` | Support page panels, wizard buttons, selection highlight and footer |
 
 ## Options

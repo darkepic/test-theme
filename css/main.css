@@ -195,6 +195,60 @@ html[data-theme-cover-lift="true"] .steam-LibraryItemBox:hover {
   border-bottom: 1px solid var(--tt-line);
 }
 
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-BackdropGlass {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface, #111113) 84%, transparent), var(--surface, #111113) 16rem);
+}
+
+html[data-theme-glow="true"] .steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-BackdropGlass {
+  background:
+    radial-gradient(70% 18rem at 65% -5rem, color-mix(in srgb, var(--accent, #c8f542) 8%, transparent), transparent),
+    linear-gradient(180deg, color-mix(in srgb, var(--surface, #111113) 84%, transparent), var(--surface, #111113) 16rem);
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-AppDetailsSectionContainer.steam-RightColumnSection,
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-Event .steam-AppActivityDay--EventBody,
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-Event.steam-PartnerEventTextOnly,
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-PartnerEventMediumImage_Container,
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-PartnerEventLargeImage_Container {
+  background: var(--surface-card, #18181b);
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
+  box-shadow: none;
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-Event.steam-PartnerEventTextOnly:hover,
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-PartnerEventMediumImage_Container:hover,
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-PartnerEventLargeImage_Container:hover {
+  background: var(--tt-hover);
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-Event .steam-PartnerEventFeaturedHeader {
+  background: var(--tt-raised);
+  color: var(--accent, #c8f542);
+  border-bottom: 1px solid var(--tt-line);
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-LinksSection > .steam-AppDetailsSectionContainer {
+  /* The client sets its gradient on this surface with !important. */
+  background: var(--tt-raised) !important;
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-LinksSection .steam-LinksSection--Link:hover {
+  background-color: var(--tt-hover);
+  color: var(--tt-text);
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-ActivityFeedContainer .steam-PostTextEntryArea {
+  background: var(--tt-raised);
+  color: var(--tt-text);
+  border: 1px solid var(--tt-line);
+  border-radius: var(--radius, 6px);
+}
+
+.steam-LeftListMaxPercentage--AppDetailsTransitionGroup .steam-ActivityFeedContainer .steam-PostTextEntryArea:focus {
+  border-color: var(--tt-line-strong);
+}
+
 :root .steam-AppGameInfoContainer {
   background: var(--surface-card, #18181b);
   border: 1px solid var(--tt-line);
@@ -208,6 +262,37 @@ html[data-theme-cover-lift="true"] .steam-LibraryItemBox:hover {
 
 .steam-DownloadBody {
   background: var(--surface, #111113);
+}
+
+:has(> .steam-DownloadsPage--TopBar + .steam-ItemListWrapper) {
+  background: var(--surface, #111113);
+}
+
+:has(> .steam-DownloadsPage--TopBar + .steam-ItemListWrapper) > :has(.steam-DownloadGraphWrapper),
+.steam-GraphAndStats {
+  background: var(--surface-strong, #09090a);
+}
+
+.steam-GraphAndStats .steam-GraphAndStats--HeroAndLogo .steam-GraphAndStats--HeroGradient {
+  background: linear-gradient(90deg, transparent 15%, var(--surface-strong, #09090a) 90%);
+}
+
+.steam-ItemListWrapper .steam-SectionItem {
+  background: var(--surface-card, #18181b);
+  border-radius: var(--radius, 6px);
+}
+
+.steam-ItemListWrapper .steam-SectionItem:focus-within,
+.steam-ItemListWrapper .steam-SectionItem:hover {
+  background: var(--tt-hover);
+}
+
+.steam-SectionItemStatus .steam-DownloadsPage--ProgressBar {
+  background-color: var(--tt-raised);
+}
+
+.steam-SectionItemStatus .steam-DownloadsPage--ProgressBar > div {
+  background-color: var(--accent, #c8f542);
 }
 
 .steam-DownloadGraphWrapper,
